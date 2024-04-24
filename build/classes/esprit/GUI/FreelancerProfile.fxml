@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #dbdbdb;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="esprit.GUI.FreelancerProfileController">
+   <children>
+      <BorderPane layoutY="74.0" prefHeight="527.0" prefWidth="300.0" style="-fx-background-color: #4BA656;">
+         <top>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="img" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets left="50.0" top="25.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label fx:id="tflogin" prefHeight="18.0" prefWidth="81.0" text="User Login" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets left="110.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </top>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="52.0" prefWidth="300.0">
+                     <children>
+                        
+                        <Label fx:id="btnmodify" onMouseClicked="#Modifier" text="Modifier Profile" textAlignment="CENTER" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="20.0" top="15.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="75.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="52.0" prefWidth="300.0">
+                     <children>
+                        
+                        <Label text="Ajouter Cv" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="20.0" top="15.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="75.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="52.0" prefWidth="300.0">
+                     <children>
+                        
+                        <Label text="Changer mot de passe" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="20.0" top="15.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="75.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="52.0" prefWidth="300.0">
+                     <children>
+                       
+                        <Label text="Offers" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="20.0" top="15.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="75.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+      <BorderPane prefHeight="75.0" prefWidth="900.0" style="-fx-background-color: #FFFFFF;">
+         <left>
+            <ImageView fitHeight="100.0" fitWidth="137.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER_LEFT">
+               <image>
+                  <Image url="@../../../../../Users/ASUS/Downloads/freelanci_logo.png" />
+               </image>
+               <BorderPane.margin>
+                  <Insets left="50.0" />
+               </BorderPane.margin>
+            </ImageView>
+         </left>
+      </BorderPane>
+      <VBox layoutX="300.0" layoutY="74.0" prefHeight="527.0" prefWidth="602.0">
+         <children>
+            <Label fx:id="tfnom" prefHeight="42.0" prefWidth="141.0" text="Nom et Prenom">
+               <VBox.margin>
+                  <Insets left="25.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Label>
+            <Label text="Profils :">
+               <VBox.margin>
+                  <Insets left="25.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <StackPane alignment="TOP_CENTER" prefHeight="121.0" prefWidth="602.0">
+               <children>
+                  <Rectangle arcHeight="25.0" arcWidth="25.0" fill="#f7f8fa" height="115.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" width="554.0" />
+                  <Label text="Bio :" StackPane.alignment="TOP_LEFT">
+                     <StackPane.margin>
+                        <Insets left="35.0" top="10.0" />
+                     </StackPane.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tfBio" prefHeight="54.0" prefWidth="487.0" text="Label" wrapText="true" StackPane.alignment="TOP_LEFT">
+                     <StackPane.margin>
+                        <Insets left="75.0" top="10.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Label text="Domaine :" StackPane.alignment="TOP_LEFT">
+                     <StackPane.margin>
+                        <Insets left="35.0" top="75.0" />
+                     </StackPane.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tfDomaine" text="Label" StackPane.alignment="TOP_LEFT">
+                     <StackPane.margin>
+                        <Insets left="110.0" top="75.0" />
+                     </StackPane.margin>
+                  </Label>
+               </children>
+            </StackPane>
+            <Label text="Contact :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <StackPane alignment="TOP_CENTER" prefHeight="121.0" prefWidth="602.0">
+               <children>
+                  <Rectangle arcHeight="25.0" arcWidth="25.0" fill="#f7f8fa" height="115.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" width="554.0" />
+                  <Label text="Numéro Tel :" StackPane.alignment="TOP_LEFT">
+                     <StackPane.margin>
+                        <Insets left="35.0" top="10.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Label fx:id="tfnum" prefHeight="15.0" prefWidth="128.0" text="Label" wrapText="true" StackPane.alignment="TOP_LEFT">
+                     <StackPane.margin>
+                        <Insets left="120.0" top="10.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Label text="Email :" StackPane.alignment="TOP_LEFT">
+                     <StackPane.margin>
+                        <Insets left="35.0" top="35.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Label fx:id="tfemail" text="Label" StackPane.alignment="TOP_LEFT">
+                     <StackPane.margin>
+                        <Insets left="85.0" top="35.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Label text="Adresse :" StackPane.alignment="TOP_LEFT">
+                     <StackPane.margin>
+                        <Insets left="35.0" top="65.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Label fx:id="tfadresse" text="Label" StackPane.alignment="TOP_LEFT">
+                     <StackPane.margin>
+                        <Insets left="95.0" top="65.0" />
+                     </StackPane.margin>
+                  </Label>
+               </children>
+            </StackPane>
+            <Label text="Portfolio :">
+               <VBox.margin>
+                  <Insets left="30.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <StackPane prefHeight="142.0" prefWidth="602.0">
+               <children>
+                  <Rectangle arcHeight="25.0" arcWidth="25.0" fill="#f7f8fa" height="80.0" stroke="BLACK" strokeType="INSIDE" width="556.0" StackPane.alignment="TOP_CENTER" />
+                  <Label text="GitHub :" StackPane.alignment="TOP_LEFT">
+                     <StackPane.margin>
+                        <Insets left="35.0" top="10.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Label text="LinkedIn :" StackPane.alignment="TOP_LEFT">
+                     <StackPane.margin>
+                        <Insets left="35.0" top="35.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Label fx:id="tfgit" text="Label" StackPane.alignment="TOP_LEFT">
+                     <StackPane.margin>
+                        <Insets left="90.0" top="10.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Label fx:id="tflinkedin" text="Label" StackPane.alignment="TOP_LEFT">
+                     <StackPane.margin>
+                        <Insets left="100.0" top="35.0" />
+                     </StackPane.margin>
+                  </Label>
+               </children>
+            </StackPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
